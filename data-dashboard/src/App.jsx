@@ -13,6 +13,7 @@ function App() {
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
   const [gradeFilter, setGradeFilter] = useState("All");
+  const [statusFilter, setStatusFilter] = useState("All");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -43,6 +44,7 @@ function App() {
   // Filter + search
   const filtered = characters
     .filter(c => gradeFilter === "All" || c.grade?.name === gradeFilter)
+    .filter(c => statusFilter === "All" || c.status?.name === statusFilter)
     .filter(c => c.name?.toLowerCase().includes(search.toLowerCase()));
 
   return (
@@ -64,6 +66,8 @@ function App() {
             gradeFilter={gradeFilter}
             setGradeFilter={setGradeFilter}
             grades={grades}
+            statusFilter={statusFilter}
+            setStatusFilter={setStatusFilter}
           />
           <CharacterTable characters={filtered} />
         </>

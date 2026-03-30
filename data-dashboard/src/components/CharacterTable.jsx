@@ -44,7 +44,7 @@ function CharacterTable({ characters }) {
               </td>
               <td>
                 {c.cursedTechniques?.length > 0
-                  ? c.cursedTechniques.map(t => t.technique_name).join(", ")
+                  ? c.cursedTechniques.slice(0, 3).map(t => t.technique_name).join(", ") + (c.cursedTechniques.length > 3 ? "..." : "")
                   : "—"}
               </td>
             </tr>
