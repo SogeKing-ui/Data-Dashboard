@@ -2,7 +2,23 @@
 
 Submitted by: Jehu Emilcar
 
-This web app: **insert description**
+This web app: 
+
+The Cursed Energy Database is an interactive data dashboard built with 
+React that pulls live character data from the Jujutsu Kaisen public API. 
+The app displays 100 characters from the JJK universe including sorcerers, 
+cursed spirits, and shikigami, with detailed information such as grade, 
+status, species, domain expansion, and cursed techniques.
+
+Users can search for characters by name, filter by grade level using a 
+dropdown, and filter by status (Alive, Dead, Unknown) using radio buttons — 
+all three filters work simultaneously in real time. The dashboard also 
+displays four summary statistics at a glance: total characters, special 
+grade count, domain expansion count, and alive character count.
+
+The app features a cinematic dark UI inspired by the Jujutsu Kaisen 
+anime, with a custom Orbitron font, Gojo blue color scheme, character 
+avatars, color-coded grade badges, and a JJK background image.
 
 Time spent: 2 hours spent in total
 
