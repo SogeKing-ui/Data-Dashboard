@@ -22,7 +22,7 @@ body {
 }
 
 .header h1 {
-  font-size: 2.8rem;
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
   font-weight: 800;
   background: linear-gradient(135deg, #fff 0%, #c084fc 60%, #e11d48 100%);
   -webkit-background-clip: text;
@@ -143,6 +143,10 @@ body {
   color: #a78bfa;
 }
 
+.grade-badge {
+  white-space: nowrap;
+}
+
 .grade-1 { background: #2d0a0a; color: #f87171; border: 1px solid #7f1d1d; }
 .grade-2 { background: #1a0d2e; color: #c084fc; border: 1px solid #4c1d95; }
 .grade-3 { background: #0f1f2e; color: #60a5fa; border: 1px solid #1e3a5f; }
@@ -150,3 +154,4 @@ body {
 
 .no-results { text-align: center; padding: 48px; color: #4b5563; }
 .loading, .error { text-align: center; padding: 48px; color: #6b7280; font-size: 1.1rem; }
+
