@@ -5,7 +5,8 @@ html, body {
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: #0a0a0f;
+  background: #2a2a3e url('/bg.jpg') center/cover no-repeat fixed;
+  background-blend-mode: multiply;
   color: #e8e8e8;
   font-family: 'Segoe UI', sans-serif;
   min-height: 100vh;
