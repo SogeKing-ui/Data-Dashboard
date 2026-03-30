@@ -54,6 +54,7 @@ https://www.loom.com/share/6dd0eac20a9f4942b7bbb3c2d49f0667
 
 # Gif
 
+![Kapture 2026-03-29 at 23 43 52](https://github.com/user-attachments/assets/362a146d-487e-4640-b8d4-52379909b894)
 
 
 ## Notes
