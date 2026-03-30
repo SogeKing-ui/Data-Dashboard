@@ -1,7 +1,8 @@
 function Header() {
   return (
-    <header>
-      <h1>⚡ JJK Dashboard</h1>
+    <header className="header">
+      <h1>⚡ Jujutsu Kaisen Dashboard</h1>
+      <p className="header-sub">呪術廻戦 — Cursed Energy Intelligence</p>
     </header>
   );
 }
