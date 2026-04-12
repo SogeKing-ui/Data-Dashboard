@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function CharacterTable({ characters }) {
   return (
     <div className="table-wrapper">
@@ -25,10 +27,12 @@ function CharacterTable({ characters }) {
                 />
               </td>
               <td className="char-name">
-                {c.name}
-                {c.alias?.length > 0 && (
-                  <span className="alias"> "{c.alias[0]}"</span>
-                )}
+                <Link to={`/character/${c.id}`} className="char-link">
+                  {c.name}
+                  {c.alias?.length > 0 && (
+                    <span className="alias"> "{c.alias[0]}"</span>
+                  )}
+                </Link>
               </td>
               <td>
                 <span className={`grade-badge grade-${c.grade?.id}`}>
