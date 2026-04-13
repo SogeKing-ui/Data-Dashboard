@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 import StatCard from "./components/StatCard";
 import CharacterTable from "./components/CharacterTable";
 import SearchFilter from "./components/SearchFilter";
@@ -129,23 +130,28 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Routes>
-        <Route path="/" element={
-          <Dashboard
-            characters={characters}
-            loading={loading}
-            error={error}
-            search={search}
-            setSearch={setSearch}
-            gradeFilter={gradeFilter}
-            setGradeFilter={setGradeFilter}
-            grades={grades}
-            statusFilter={statusFilter}
-            setStatusFilter={setStatusFilter}
-          />
-        } />
-        <Route path="/character/:id" element={<CharacterDetail />} />
-      </Routes>
+      <div className="app-body">
+        <Sidebar />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={
+              <Dashboard
+                characters={characters}
+                loading={loading}
+                error={error}
+                search={search}
+                setSearch={setSearch}
+                gradeFilter={gradeFilter}
+                setGradeFilter={setGradeFilter}
+                grades={grades}
+                statusFilter={statusFilter}
+                setStatusFilter={setStatusFilter}
+              />
+            } />
+            <Route path="/character/:id" element={<CharacterDetail />} />
+          </Routes>
+        </main>
+      </div>
     </div>
   );
 }
