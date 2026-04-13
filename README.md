@@ -43,6 +43,7 @@ Here's a walkthrough of implemented user stories: https://www.loom.com/share/080
 
 # Gif
 
+![Kapture 2026-04-12 at 21 35 43](https://github.com/user-attachments/assets/bf06c415-b8eb-44a5-b84a-dcbe2a752134)
 
 
 ## Notes
