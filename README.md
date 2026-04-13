@@ -1,4 +1,4 @@
-# Web Development Project 6 - *Name of App Here*
+# Web Development Project 6 - Data Dashboard Part 2
 
 Submitted by: **Jehu Emilcar**
 
@@ -48,11 +48,17 @@ Here's a walkthrough of implemented user stories: https://www.loom.com/share/080
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+One of the main challenges was migrating the Part 1 project into a new GitHub repository without losing the existing git history. The remote origin had to be manually removed and reassigned to the new repo before pushing.
+
+Setting up React Router required restructuring App.jsx to separate the dashboard logic into its own component, so that the sidebar and routes could share the same layout wrapper without re-fetching data on navigation.
+
+Integrating Recharts was straightforward, but building the chart data required reducing the raw character array into grouped objects by grade and status before passing it to the chart components.
+
+The JJK API does not return a description field for most characters, so the detail view was designed to surface all other available data fields such as aliases, affiliation, domain expansion, and the full cursed techniques list to ensure the detail page felt meaningfully different from the dashboard.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2026] [Jehu Emilcar]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
