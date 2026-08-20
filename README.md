@@ -1,6 +1,4 @@
-# Web Development Project 6 - Data Dashboard Part 2
-
-Submitted by: **Jehu Emilcar**
+# Data Dashboard
 
 This web app: 
 
@@ -24,18 +22,6 @@ The following **required** functionality is completed:
   - At least two charts should be incorporated into the dashboard view of the site
   - Each chart should describe a different aspect of the dataset
 
-
-The following **optional** features are implemented:
-
-- [ ] The site’s customized dashboard contains more content that explains what is interesting about the data 
-  - e.g., an additional description, graph annotation, suggestion for which filters to use, or an additional page that explains more about the data
-- [ ] The site allows users to toggle between different data visualizations
-  - User should be able to use some mechanism to toggle between displaying and hiding visualizations 
-
-  
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
