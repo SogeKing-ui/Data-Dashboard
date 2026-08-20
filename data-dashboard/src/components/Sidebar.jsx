@@ -21,7 +21,6 @@ function Sidebar() {
       <div className="sidebar-footer">
         <p>呪術廻戦</p>
         <p>Jehu Emilcar</p>
-        <p>Z23568962</p>
       </div>
     </aside>
   );
